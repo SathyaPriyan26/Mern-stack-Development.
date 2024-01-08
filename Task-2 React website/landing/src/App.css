@@ -1,0 +1,369 @@
+*{
+  scroll-behavior: smooth;
+}
+.nav1{
+  display: flex;
+  background-color: white;
+  padding-left: 1rem;
+}
+.red{
+  color: #FB471F;
+  font-family: Kanit;
+  font-size: 1.69444rem;
+  font-style: normal;
+  font-weight: 600;
+  
+}
+.white{
+  color: #0a0a0a;
+  font-family: Jost;
+  font-size: 1.69444rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.side{
+  display: flex;
+  gap: 2rem;
+  padding-left: 40rem;
+  /* background-color: grey; */
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+
+  font-family: Jost;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.item{
+  text-align: center;
+}
+.contact{
+  color: #FB471F;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-family: Jost;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 2px solid red;
+  border-radius: 5rem;
+  width:7rem;
+  height: 1rem;
+}
+.title{
+  text-align: center;
+  font-family: Jost;
+  font-size: 4.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1rem;
+}
+.btn{
+  color: #FFF;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  background-color: red;
+  height: 3rem;
+  width: 10em;
+  text-align: center;
+  align-items: center;
+  box-shadow: inset 0 -3em 3em red,
+  0 0 0 2px red,
+  0.3em 0.3em 1em red;
+  /* border: 1px solid black; */
+  margin-left: 30rem;
+  text-decoration: none;
+  font-family: Jost;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+a:link {
+  text-decoration: none;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+  margin-left: 5rem;
+  margin-top: 5rem;
+}
+.card-text{
+  width: 20rem;
+  height: 17rem;
+  background-color: rgb(180, 161, 161);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-text h1{
+  color: #FFF;
+  padding-left: 1rem;
+  font-family: Jost;
+  font-size: 1.85rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.show{
+  color: #FFF;
+  font-family: Jost;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  padding-left:1rem;
+
+}
+.under{
+  color: #FFF;
+  font-family: Jost;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 1rem;
+  text-decoration: underline red;
+}
+.search-row1{
+  margin-top: 3rem;
+  display: flex;
+  margin-left: 1rem;
+}
+.col1{
+  margin-left: 5rem;
+  width:35rem;
+  border-right: solid 2px red;
+}
+.col1 h1{
+  font-family: Jost;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.red1{
+  color: #FB471F;
+  font-family: Jost;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.col2{
+  margin-top: 4rem;
+  width:35rem;
+  margin-left: 1rem;
+}
+.col2 p{
+  margin-left: 1rem;
+  font-family: Jost;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.images{
+  margin-left: 5rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  row-gap: 1rem;
+  margin-right: 5rem;
+}
+img{
+  height: 20rem;
+  width: 23rem;
+}
+.images div {
+  position: relative;
+  overflow: hidden;
+}
+
+.images img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.images div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.images div:hover img {
+  transform: scale(1.1);
+}
+
+.images div:hover::after {
+  opacity: 1;
+}
+
+.showmore{
+  border-radius: 0.625rem;
+  background: #FB471F;
+  padding: 0.875rem 2.8125rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  width: 10rem;
+  height: 2rem;
+  margin-left: 32rem;
+  margin-top: 5rem;
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.showmore a{
+  color: #FFF;
+}
+.guide-top{
+  margin-left: 5rem;
+  margin-top: 5rem;
+  width: 45rem;
+}
+.guide-top h1{
+  font-family: Jost;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 3.372rem;
+  
+}
+.guide-top p{
+  font-family: Jost;
+font-size: 1.625rem;
+font-style: normal;
+font-weight: 400;
+line-height: 134.523%; /* 2.186rem */
+text-align: left;
+}
+.guide-imgs{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  padding: 3rem;
+  
+}
+.guide-item{
+  border-radius: 1.25rem;
+  background-color: rgb(231, 223, 223);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform .2s;
+
+}
+.guide-item:hover{
+  transform: scale(1.2);
+}
+.g-i{
+  border-radius: 1.25rem;
+}
+.g-i img{
+  border-radius: 1.25rem;
+  height: auto;
+  width:auto;
+
+}
+.star{
+  display: flex;
+}
+.guide-details{
+  padding-left: 2rem;
+
+}
+.rate{
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+.guide-details h1{
+  color: #000;
+  font-family: Jost;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 134.523%; /* 2.35413rem */
+}
+.guide-details p{
+  color: #8A8A8A;
+  font-family: Jost;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 134.523%; /* 1.26113rem */
+}
+.guide-details h2{
+  color: #000;
+  font-family: Jost;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 134.523%; /* 1.68156rem */
+}
+.blog-top{
+   text-align: center;
+}
+.blog-top h1{
+  color: #FB471F;
+  font-family: Jost;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 134.523%;
+
+}
+
+.black{
+  color: #000;
+}
+.blog-details{
+  width: auto;
+  height: 25rem;
+  background-color: rgb(231, 223, 223);
+  display: flex;
+  margin-bottom: 8rem;
+}
+.blog-img{
+  padding: 2rem;
+}
+.blog-write{
+  margin-top: 4rem;
+  color: #000;
+  font-family: Jost;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 3rem;
+  text-align: left;
+}
+.blog-write h2{
+  color: #000;
+  font-family: Jost;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.blog-write p{
+  
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Jost;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
